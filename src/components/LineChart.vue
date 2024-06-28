@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 shadow-md h-72 bg-white  text-white">
+  <div class=" flex-col justify-center items-center shadow-md rounded w-[700px] h-full bg-white  text-white">
     <div class="h-full text-white">
       <LineChartComponent :data="chartData" />
     </div>
@@ -41,20 +41,12 @@ export default defineComponent({
 
 
 
-.chart-container canvas {
-  width: 100% !important;
-  height: auto !important;
-}
 
-.line-chart-label {
-  font-family: Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
+
+
   
   
-}
+
 
 .line-chart {
   border: 1px solid #ddd;

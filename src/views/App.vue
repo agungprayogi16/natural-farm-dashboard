@@ -16,7 +16,7 @@
         </nav>
       </div>
     </header>
-    <main class="h-screen md:ml-64 pt-0 p-4">
+    <main class="h-screen md:ml-64 w-full p-4">
       <router-view />
     </main>
   </div>

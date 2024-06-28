@@ -58,7 +58,11 @@ export default createStore({
       return state.additionalDiscount;
     },
     total(state) {
-      return state.cart.reduce((sum, product) => sum + product.price * product.quantity, 0) - state.additionalDiscount;
+      return state.cart.reduce((sum, product) => {
+        const discountAmount = (product.price * product.discount) / 100;
+        const priceAfterDiscount = product.price - discountAmount;
+        return sum + priceAfterDiscount * product.quantity;
+      }, 0) - state.additionalDiscount;
     }
   }
 });

@@ -5,15 +5,18 @@
       <div class="lg:col-span-2 md:col-span-2">
         <ProductList class="bg-white p-4 shadow rounded-lg" />
       </div>
-      <div class="lg:col-span-1 md:col-span-2">
+      <div class="lg:col-span-1  md:col-span-2">
         <OrderSummary class="bg-white p-4 shadow rounded-lg mb-4" />
         <AdditionalDiscount class="bg-white p-4 shadow rounded-lg" />
+        <CustomerSelectionVue class="bg-white mt-11 p-4 shadow rounded-lg" />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+
+import CustomerSelectionVue from '@/components/CustomerSelection.vue'
 import ProductList from '@/components/ProductList.vue';
 import AdditionalDiscount from '@/components/AdditionalDiscount.vue';
 import OrderSummary from '@/components/OrderSummary.vue';
@@ -23,6 +26,7 @@ export default {
     OrderSummary,
     ProductList,
     AdditionalDiscount,
+    CustomerSelectionVue,
   },
 };
 </script>

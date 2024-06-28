@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import MainPage from '@/pages/MainPage.vue'
 import OrdersPage from '@/pages/OrdersPage.vue'
-import ChardPage from '@/pages/ChardPage.vue' 
+
 
 const routes = [
     {
@@ -15,11 +15,7 @@ const routes = [
         component: OrdersPage  
     },
     
-    {
-        path: '/repoprt',
-        name: 'ChardPage',
-        component: ChardPage  
-    },
+   
 
 
 
