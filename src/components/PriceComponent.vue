@@ -16,13 +16,17 @@ export default {
     return {
       selectedPayment: 'Cash'
 
+
     };
   },
   methods: {
     updatePayment(newPayment) {
       this.selectedPayment = newPayment;
+
       
     }
+    
+
 
 
   }

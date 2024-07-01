@@ -1,32 +1,39 @@
 <template>
-  <div class="p-4 w-full h-screen">
-    <h1 class="text-2xl font-bold mb-6">Orders Page</h1>
-    <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 mb-4">
-      <div class="lg:col-span-2 md:col-span-2">
-        <ProductList class="bg-white p-4 shadow rounded-lg" />
+  <div class="p-4 w-full min-h-screen ml-7 bg-gray-100">
+    <div class="flex items-start justify-start mb-6">
+      <i class="fas fa-shopping-cart fa-2x text-black mr-2"></i>
+      <h1 class="text-3xl flex justify-start font-bold text-start text-gray-800">Orders Page</h1>
+    </div>
+    <div class="flex flex-col lg:flex-row gap-6">
+      <div class="lg:w-2/3 flex flex-col">
+        <ProductList class="bg-white p-6 shadow-lg rounded-lg flex-grow" />
       </div>
-      <div class="lg:col-span-1  md:col-span-2">
-        <OrderSummary class="bg-white p-4 shadow rounded-lg mb-4" />
-        <AdditionalDiscount class="bg-white p-4 shadow rounded-lg" />
-        <CustomerSelectionVue class="bg-white mt-11 p-4 shadow rounded-lg" />
+      <div class="lg:w-1/3 mb-[404px] flex flex-col space-y-4">
+        <OrderSummary class="bg-white p-6 shadow-lg rounded-lg" />
+        <AdditionalDiscount class="bg-white p-6 shadow-lg rounded-lg" />
+        <CustomerSelectionVue class="bg-white p-6 shadow-lg rounded-lg" />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-
-import CustomerSelectionVue from '@/components/CustomerSelection.vue'
+import { defineComponent } from 'vue';
+import CustomerSelectionVue from '@/components/CustomerSelection.vue';
 import ProductList from '@/components/ProductList.vue';
 import AdditionalDiscount from '@/components/AdditionalDiscount.vue';
 import OrderSummary from '@/components/OrderSummary.vue';
 
-export default {
+export default defineComponent({
   components: {
     OrderSummary,
     ProductList,
     AdditionalDiscount,
     CustomerSelectionVue,
   },
-};
+});
 </script>
+
+<style scoped>
+/* Additional custom styles if needed */
+</style>

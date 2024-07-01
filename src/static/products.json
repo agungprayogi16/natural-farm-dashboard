@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Aveeno Baby Wash & Shampoo 12oz 354 ml",
+    "image":"https://i.pinimg.com/564x/0f/ff/e4/0fffe41a8123b99fddf27e11bea4b9be.jpg",
     "brand": "Aveeno",
     "price": 208000,
     "sku": "825004"
@@ -9,6 +10,7 @@
   {
     "id": 2,
     "name": "Aveeno Daily Moisture Lotion 71 ml",
+    "image":"https://i.pinimg.com/564x/5c/9d/f9/5c9df9a8730a6e251c634c9d0e000363.jpg",
     "brand": "Aveeno",
     "price": 100100,
     "sku": "825001"
@@ -17,12 +19,14 @@
     "id": 3,
     "name": "Aveeno Daily Moisturizing Body Wash 354 ml",
     "brand": "Aveeno",
+    "image":"https://i.pinimg.com/736x/6f/04/c2/6f04c28742166da962c68a096264398d.jpg",
     "price": 197900,
     "sku": "825003"
   },
   {
     "id": 4,
     "name": "Aveeno Skin Relief Body Wash 354 ml",
+    "image":"https://i.pinimg.com/564x/61/7c/02/617c02f55d35bbaa63aadce36334b34b.jpg",
     "brand": "Aveeno",
     "price": 220400,
     "sku": "825002"
@@ -31,6 +35,7 @@
     "id": 5,
     "name": "Aveeno Skin Relief Moisturizing Lotion 71 ml",
     "brand": "Aveeno",
+    "image":"https://i.pinimg.com/564x/e1/3d/17/e13d17a6a5392fb03ee6c8c23482c35e.jpg",
     "price": 111400,
     "sku": "825000"
   },
@@ -38,6 +43,7 @@
     "id": 6,
     "name": "Bagus Masker KN95 Box isi 20 Black",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/09/eb/1e/09eb1e053940202f3181ee03f8ab55e2.jpg",
     "price": 58500,
     "sku": "672013"
   },
@@ -45,6 +51,7 @@
     "id": 7,
     "name": "Bagus Masker KN95 Box isi 20 Pink",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/ad/a9/d2/ada9d22bb5efb15b4349255797534c5d.jpg",
     "price": 58500,
     "sku": "672015"
   },
@@ -52,6 +59,7 @@
     "id": 8,
     "name": "Bagus Masker KN95 Box isi 20 Putih",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/dc/33/66/dc3366f6793a7fc72ad5fb4f0c82f1f4.jpg",
     "price": 58500,
     "sku": "672014"
   },
@@ -59,6 +67,7 @@
     "id": 10,
     "name": "Bagus Masker KN95 isi 10 Putih",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/a9/1d/69/a91d693a34e4c0a2a17b8503b8dfa39c.jpg",
     "price": 29900,
     "sku": "672011"
   },
@@ -66,6 +75,7 @@
     "id": 11,
     "name": "Bagus Masker KN95 isi 10 Black",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/a9/1d/69/a91d693a34e4c0a2a17b8503b8dfa39c.jpg",
     "price": 29900,
     "sku": "672010"
   },
@@ -73,6 +83,7 @@
     "id": 12,
     "name": "Bagus Masker KN95 isi 10 Pink",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/ad/a9/d2/ada9d22bb5efb15b4349255797534c5d.jpg",
     "price": 29900,
     "sku": "672012"
   },
@@ -80,6 +91,7 @@
     "id": 13,
     "name": "Bagus PiPi Kids Surgical Mask 3 Ply (5 pcs)",
     "brand": "Bagus Surgical Mask",
+    "image":"https://i.pinimg.com/564x/a2/3c/0d/a23c0d82253f06819c8fe2dca655b5e0.jpg",
     "price": 15000,
     "sku": "672002"
   }

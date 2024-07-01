@@ -1,55 +1,66 @@
 import { createStore } from 'vuex';
+import { Product } from '../types/products';
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  quantity: number;
-  discount: number;
-}
+// Mutation Types
+const ADD_TO_CART = 'ADD_TO_CART';
+const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+const UPDATE_CART = 'UPDATE_CART';
+const SET_ADDITIONAL_DISCOUNT = 'SET_ADDITIONAL_DISCOUNT';
 
 export default createStore({
+  // State
   state: {
     cart: [] as Product[],
     additionalDiscount: 0,
   },
+
+  // Mutations
   mutations: {
-    addProductToCart(state, product: Product) {
+    [ADD_TO_CART](state, product: Product) {
       const existingProduct = state.cart.find(item => item.id === product.id);
       if (existingProduct) {
         existingProduct.quantity += product.quantity;
-        existingProduct.discount = product.discount;
+        if (existingProduct.quantity % 2 === 0) {
+          existingProduct.discount = 30;
+        } else {
+          existingProduct.discount = 0;
+        }
       } else {
+        product.discount = product.quantity % 2 === 0 ? 30 : 0;
         state.cart.push(product);
       }
     },
-    removeProductFromCart(state, productId: number) {
+    [REMOVE_FROM_CART](state, productId: number) {
       state.cart = state.cart.filter(product => product.id !== productId);
     },
-    updateProductInCart(state, product: Product) {
+    [UPDATE_CART](state, product: Product) {
       const index = state.cart.findIndex(item => item.id === product.id);
       if (index !== -1) {
         state.cart[index] = product;
       }
     },
-    setAdditionalDiscount(state, discount: number) {
+    [SET_ADDITIONAL_DISCOUNT](state, discount: number) {
       state.additionalDiscount = discount;
     }
   },
+
+  // Actions
   actions: {
     addProductToCart({ commit }, product: Product) {
-      commit('addProductToCart', product);
+      commit(ADD_TO_CART, product);
     },
     removeProductFromCart({ commit }, productId: number) {
-      commit('removeProductFromCart', productId);
+      commit(REMOVE_FROM_CART, productId);
     },
     updateProductInCart({ commit }, product: Product) {
-      commit('updateProductInCart', product);
+      commit(UPDATE_CART, product);
     },
     applyAdditionalDiscount({ commit }, discount: number) {
-      commit('setAdditionalDiscount', discount);
-    }
+      commit(SET_ADDITIONAL_DISCOUNT, discount);
+    },
   },
+
+  // Getters
   getters: {
     cart(state) {
       return state.cart;
@@ -63,6 +74,7 @@ export default createStore({
         const priceAfterDiscount = product.price - discountAmount;
         return sum + priceAfterDiscount * product.quantity;
       }, 0) - state.additionalDiscount;
-    }
-  }
+    },
+  },
 });
+  

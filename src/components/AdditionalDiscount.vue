@@ -18,15 +18,18 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import { useStore } from 'vuex';
 
 export default defineComponent({
   name: 'DiscountInput',
   setup() {
+    const store = useStore();
     const discount = ref<number>(0);
 
     const applyDiscount = () => {
       if (discount.value < 0) discount.value = 0;
       if (discount.value > 100) discount.value = 100;
+      store.dispatch('applyAdditionalDiscount', discount.value);
       console.log(`Discount applied: ${discount.value}%`);
     };
 
@@ -34,5 +37,3 @@ export default defineComponent({
   }
 });
 </script>
-
-

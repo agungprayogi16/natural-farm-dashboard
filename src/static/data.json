@@ -1,0 +1,23 @@
+{
+  "salesData": [
+    { "id": 1, "name": "Aveeno Baby Wash & Shampoo 12oz 354 ml", "price": 208000 },
+    { "id": 2, "name": "Aveeno Daily Moisture Lotion 71 ml", "price": 100100 },
+    { "id": 3, "name": "Aveeno Daily Moisturizing Body Wash 354 ml", "price": 197900 },
+    { "id": 4, "name": "Aveeno Skin Relief Body Wash 354 ml", "price": 220400 },
+    { "id": 5, "name": "Aveeno Skin Relief Moisturizing Lotion 71 ml", "price": 111400 },
+    { "id": 6, "name": "Bagus Masker KN95 Box isi 20 Black", "price": 58500 },
+    { "id": 7, "name": "Bagus Masker KN95 Box isi 20 Pink", "price": 58500 },
+    { "id": 8, "name": "Bagus Masker KN95 Box isi 20 Putih", "price": 58500 },
+    { "id": 10, "name": "Bagus Masker KN95 isi 10 Putih", "price": 29900 },
+    { "id": 11, "name": "Bagus Masker KN95 isi 10 Black", "price": 29900 },
+    { "id": 12, "name": "Bagus Masker KN95 isi 10 Pink", "price": 29900 },
+    { "id": 13, "name": "Bagus PiPi Kids Surgical Mask 3 Ply (5 pcs)", "price": 15000 }
+  ],
+  "paymentMethods": [
+    { "id": 1, "name": "Transfer", "code_payment": "tf_manual", "num_index": 1 },
+    { "id": 8, "name": "Shopeepay", "code_payment": "shopeepay", "num_index": 5 },
+    { "id": 5, "name": "Credit Card/Debit Card", "code_payment": "credit_card", "num_index": 2 },
+    { "id": 7, "name": "Go-Pay", "code_payment": "gopay", "num_index": 4 },
+    { "id": 6, "name": "Virtual Account", "code_payment": "permata_va,bca_va,bni_va,other_va,echannel,bri_va", "num_index": 3 }
+  ]
+}
