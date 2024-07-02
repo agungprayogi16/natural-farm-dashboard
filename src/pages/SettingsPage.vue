@@ -1,5 +1,5 @@
 <template>
-  <div class="flex ml-16 p-4 items-center justify-start ">
+  <div class="flex lg:ml-16 md:ml-16 p-4 items-center justify-start ">
     <i class="fas fa-cog mr-3 fa-2x  text-blue-500"></i>
     <h2 class="text-3xl font-bold text-gray-800">
       Settings

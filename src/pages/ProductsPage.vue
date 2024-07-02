@@ -34,13 +34,13 @@
         <div class="flex  gap-2 absolute right-2 bottom-2  items-center">
           <button
             @click="addProductToCart(product)"
-            class="bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
+            class="bg-blue-500 w-full text-white px-2 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
           >
             Add
           </button>
           <button
             @click="removeProduct(product.id)"
-            class="bg-red-500 text-white px-2 py-2 rounded-lg hover:bg-red-700 transition duration-300 ease-in-out"
+            class="bg-red-500 w-full text-white px-2 py-2 rounded-lg hover:bg-red-700 transition duration-300 ease-in-out"
           >
             Remove
           </button>
