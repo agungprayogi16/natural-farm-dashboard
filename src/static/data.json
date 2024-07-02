@@ -19,5 +19,11 @@
     { "id": 5, "name": "Credit Card/Debit Card", "code_payment": "credit_card", "num_index": 2 },
     { "id": 7, "name": "Go-Pay", "code_payment": "gopay", "num_index": 4 },
     { "id": 6, "name": "Virtual Account", "code_payment": "permata_va,bca_va,bni_va,other_va,echannel,bri_va", "num_index": 3 }
+  ],
+  "products": [
+    { "id": 1, "name": "Bagus Masker KN95 isi 10 Black", "price": 29900, "quantity": 1, "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/11/22/0/0_0_700_700.jpg", "discount": 0 },
+    { "id": 2, "name": "Bagus Masker KN95 isi 10 Pink", "price": 29900, "quantity": 1, "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/11/22/0/0_0_700_700.jpg", "discount": 0 },
+    { "id": 3, "name": "Bagus Masker KN95 isi 10 Putih", "price": 29900, "quantity": 1, "image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2018/11/22/0/0_0_700_700.jpg", "discount": 0 }
   ]
+
 }

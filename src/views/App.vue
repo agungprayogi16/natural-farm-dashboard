@@ -25,9 +25,9 @@
               class="cursor-pointer p-2 rounded-md transition-colors duration-300 w-full"
               :class="{ 'text-blue-500': $route.path === '/logout', 'hover:bg-gray-700': $route.path !== '/logout' }"
             >
-              <div class="flex items-center pl-4">
+              <div class="flex text-red-600 items-center pl-4">
                 <i class="mdi mdi-logout"></i>
-                <span class="ml-2 font-bold">Logout</span>
+                <span class="ml-2  font-bold">Logout</span>
               </div>
             </li>
           </ul>
@@ -39,7 +39,7 @@
         class="md:hidden fixed top-4 right-4 z-20 bg-gray-800 text-white p-2 rounded-md"
         @click="toggleSidebar"
       >
-        <i :class="`mdi mdi-${isSidebarOpen ? 'close' : 'menu'}`"></i>
+        <i :class="`mdi mdi-${isSidebarOpen ? 'menu' : 'close'}`"></i>
       </button>
       <router-view />
     </main>
@@ -51,7 +51,7 @@ export default {
   name: 'App',
   data() {
     return {
-      isSidebarOpen: false,
+      isSidebarOpen: true,
       menuItems: [
         { title: 'Dashboard', route: '/', icon: 'view-dashboard' },
         { title: 'Orders', route: '/orders', icon: 'shopping' },

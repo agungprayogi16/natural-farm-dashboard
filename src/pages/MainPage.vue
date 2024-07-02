@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import LineChart from '@/components/LineChart.vue';
+import LineChart from '../components/LineChartComponent.vue';
 
 export default {
   components: {
@@ -20,5 +20,4 @@ export default {
   },
 };
 </script>
-
 
