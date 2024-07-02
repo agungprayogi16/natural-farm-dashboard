@@ -31,7 +31,7 @@
         />
         <div class="text-lg font-semibold mb-2 text-gray-800">{{ product.name }}</div>
         <div class="text-gray-700 mb-4">{{ formatCurrency(product.price) }}</div>
-        <div class="flex justify-end gap-4 items-center">
+        <div class="flex  gap-2 absolute right-2 bottom-2  items-center">
           <button
             @click="addProductToCart(product)"
             class="bg-blue-500 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out"
